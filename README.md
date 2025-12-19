@@ -1,3 +1,4 @@
+
 # Orientation Materials – AIINS@NTHU
 
 ## New Students Please Read the Following Information
@@ -398,3 +399,197 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
   ```bash
   sudo apt install msttcorefonts -qq
   rm ~/.cache/matplotlib -rf
+  ```
+
+* Server Adminstration
+
+  [Fresh Ubuntu Server Installation](https://hackmd.io/@xtorker/Bk7b4jYKL)
+
+  Docker User Namespace Remap Please read [this article](https://docs.docker.com/engine/security/userns-remap/) very carefully and understand everything in it. TLDR: We use `userns-remap` to avoid users (not a sudoer) to get the root permission on the host with commands executed inside the docker container.
+
+  sodu command Audit (Installed on “teddy” only) We record all the commands executed begin with sudo. You can replay them via [this scripts](https://github.com/xtorker/replayUserAudit).
+
+  [Firewall (ufw)](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)
+  [fail2ban](https://www.linode.com/docs/guides/using-fail2ban-to-secure-your-server-a-tutorial/)
+  [Disk Management](https://blog.gtwang.org/linux/parted-command-to-create-resize-rescue-linux-disk-partitions/)
+
+  * `df`
+  * `lsblk`
+  * `parted`
+  * `mkfs`
+  * `blkid`
+  * `mount`
+
+  NMSL Logo on teddy
+
+  * `lolcat`
+  * `motd`
+  * put [this file](https://github.com/xtorker/Linux_server_motd_logo) under `/etc/update-motd.d/` (You can change the logo to whatever you want)
+  * ASCII Generator
+
+* x-window
+
+  * Windows
+
+    * Putty (Setup the x-client for you)
+    * [VcXsrv](https://sourceforge.net/projects/vcxsrv/)
+
+  put these line in your server `.bashrc` or `.zprofile`
+
+  ```bash
+  # YourIP:0.0 for default setting in VcXsrv
+  # ‘0.0’ can be found in Windows system tray
+  export DISPLAY=”140.114.xx.xx:0.0″
+  ```
+
+  replace with your public IP
+
+  Remember to check the third option (Disable access control)
+
+  ![](https://i.imgur.com/66aQuAe.png)
+
+* bash, zsh
+
+  * In case you forget what is shell, [this](https://www.tutorialspoint.com/unix/unix-what-is-shell.htm) is for you.
+  * If you are familiar with bash (the default shell in Ubuntu) and wanna try something fancy to make your everyday life better, give zsh a try.
+  * Personally, I recommend [zplug](https://github.com/zplug/zplug) as your first zsh framewrok.
+  * [Here](https://github.com/xtorker/zsh_setting) is my own zsh setting if anyone want to get a quick start.
+  * [ Rule of thumb ] Choose the plugin you need and make your own zsh setting
+
+* screen, tmux
+  [screen](https://linuxize.com/post/how-to-use-linux-screen/) Keep your command running in the background and control it whenever you want. Critical tool for your experiments that take long time to finish.
+  tmux ([link1](https://linuxize.com/post/getting-started-with-tmux/), [link2](https://blog.gtwang.org/linux/linux-tmux-terminal-multiplexer-tutorial/)) Give you additional terminal within a single tab to make your life easier.
+
+* Common issues on compiling
+
+  * `$PATH`, `$LD_LIBRARY_PATH` is not correct
+  * version mismatch on either linking library, compiler, driver, etc.
+  * Files not found: make sure everything is in the right place.
+
+* Debugging tool (gdb)
+
+  [Good tutorial](https://developers.redhat.com/blog/2021/04/30/the-gdb-developers-gnu-debugger-tutorial-part-1-getting-started-with-the-debugger)
+
+### Miscellaneous
+
+* Slack
+
+  * Professor will add you in our slack workspace, so you can use slack for communications
+  * Download slack from their website according to your OS: [https://slack.com/downloads](https://slack.com/downloads)
+  * Open the app and Enter the workspace: [https://aiinsnthu.slack.com](https://aiinsnthu.slack.com)
+  * Use your formal name as the account name
+  * Also download the mobile app from the app store
+
+* Google Groups
+
+  * Professor will add you in our google group, so you can send and receive mails and see all the group events
+  * To send the mail to everyone, the address is [mailto:nmsl-all@googlegroups.com](mailto:nmsl-all@googlegroups.com)
+
+  ![](https://i.imgur.com/9L63oPB.png)
+
+* Google Calendar
+
+  * Professor will add you in our google calendar, so you can check our lab events and book meeting time
+  * Click the office hour event on google calendar will bring you to the reservation page
+
+* How to write professional emails:
+
+  * Check your emails often.
+
+  * Include a clear, direct subject line.
+
+  * Please use a professional email address. Here is a bad example: teddybear AT gmail.com .
+
+  * Some of you may have more than one email account, please do forward all emails to your primary email account (so that you don’t check your account once per week).
+
+  * Reply-all whenever possible. This will keep everyone in the loop (after all, we are a team).
+
+  * Reply to your emails — even if (you think) the email wasn’t intended for you.
+
+  * Be aware that people from different cultures speak and write differently.
+
+  * Proofread every message (multiple times). For formal emails, run them by Grammarly.
+
+  * Keep your fonts classic, or better make your email plain-text.
+
+  * Double-check that you’ve selected the correct recipient.
+
+  - Revised from an article@businessinsider
+
+* 1-1 Meeting Reservation
+
+  Step 1. Open your google calendar and click NMSL Office Hour (Graduate Students)
+
+  ![](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2021/11/1.png)
+
+  Step 2. Click the appointment page
+
+  ![](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2021/11/2-1024x487.png)
+
+  Step 3. Choose a time slot you want
+
+  ![](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2021/11/3-1024x480.png)
+
+  Step 4. Click save
+
+  ![](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2021/11/5.png)
+
+* Weekly reports
+
+  You need to send weekly report to professor through email every Friday, the email name would be like: `[WR] Your Name`
+
+  Here is the content format:
+
+  ![](https://i.imgur.com/G7dfwAO.png)
+
+  Examples of not-very-useful todo tasks:
+
+  * Finish MM homework #2 <— has nothing or very little to do with your research
+  * Write my paper <— take longer than 4 hours to complete, break it down
+  * Read some papers <— tell me which papers you are reading
+  * Read more papers <— define more
+
+  Here are the more meaningful and get-to-the-points todo tasks:
+  Todo:
+
+  1. apply different numbers of features/factors
+  2. add features as factors for IS
+  3. add references to related work
+  4. sec. 3.1 and results writeup
+
+* How to use projector
+
+  * Windows
+
+    1. Connect to the projector’s Wi-Fi (Wi-Fi name and password will be displayed on the projection screen when no any device use it)
+    2. Open setting `System/Display/Multiple Displays` **Connect to a wireless display**
+       ![Screenshot 2023-12-14 163848](https://hackmd.io/_uploads/ryYDbBd8a.png)
+       ![Screenshot 2023-12-14 163859](https://hackmd.io/_uploads/B15O-rdL6.png)
+       ![Screenshot 2023-12-14 163905](https://hackmd.io/_uploads/By2dWSuL6.png)
+    3. If the connection is successful, you can then change projection options and project the screen just like using a regular wired projector
+       ![Screenshot 2023-12-14 165622](https://hackmd.io/_uploads/H1qHrHdIT.png)
+  * Mac
+
+* 研究生完全求生手冊
+
+  * The purpose of reading this book is to help new students participate in the lab.
+  * You can access this [book](https://nthu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma990054645290206774&context=L&vid=886UST_NTHU:886UST_NTHU&lang=zh-tw&search_scope=NTHU_holding&adaptor=Local%20Search%20Engine&tab=LibraryCatalog&query=any,contains,%E7%A0%94%E7%A9%B6%E7%94%9F%E5%AE%8C%E5%85%A8%E6%B1%82%E7%94%9F%E6%89%8B%E5%86%8A&offset=0) through the NTHU library.
+    ![](https://reading.udn.com/readingimg/covert_page/book/117715.jpg)
+
+* Presentation slides
+
+  For those who are going to present in the next week, you need to share with us your presentation topic in the last group meeting
+
+  After presentation, please go to the second link and upload your presentation slides
+
+  Group meeting presentation title and order:
+  [https://docs.google.com/spreadsheets/d/1Nk8V5x8DWbpaQhKh91I0kbwN0Q7bTGSQV7qka4aVqMQ/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1Nk8V5x8DWbpaQhKh91I0kbwN0Q7bTGSQV7qka4aVqMQ/edit?usp=sharing)
+
+  Group meeting presentation slides:
+  [https://drive.google.com/drive/folders/1UejVCYAl_RIfriNZmQMx0F2hN1yuvfnw?usp=sharing](https://drive.google.com/drive/folders/1UejVCYAl_RIfriNZmQMx0F2hN1yuvfnw?usp=sharing)
+
+  The file name of the slides would be like `NAME_YYDD`, for example, `TC_210623`
+
+* How to create CV
+
+  * reference to CV overleaf [template](https://www.overleaf.com/read/dprxndnfwrpc#08e4cf)
