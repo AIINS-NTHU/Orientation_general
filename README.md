@@ -18,7 +18,7 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
 ### How to read and write papers
 
-- [How to read paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
+- [How to read paper](https://dl.acm.org/doi/pdf/10.1145/1273445.1273458)
 
 - Google scholar
   - Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, …
@@ -26,8 +26,9 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
 - Zotero
   - Help you manage your paper, you can put the paper your find in zotero to manage them
-  - Please also install the Better Bibtex for Zotero extension (<https://retorque.re/zotero-better-bibtex/>) to automatically generate the citation keys. Please change the citation key foramt into: `[auth:lower][year][veryshorttitle:lower]`.
-  - <https://www.zotero.org/>
+  - Please also install the Better Bibtex for Zotero extension (<https://retorque.re/zotero-better-bibtex/>) to automatically generate the citation keys.
+    - for more guide, see [tools orientation#zotero](https://github.com/AIINS-NTHU/Tools-Orientation/blob/main/zotero/README.md)
+  - download and install <https://www.zotero.org/>
 
   ![](https://i.imgur.com/g94itfE.png)
 
