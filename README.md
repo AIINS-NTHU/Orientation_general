@@ -3,11 +3,14 @@
 
 ## New Students Please Read the Following Information
 
+table of contents:
+
 - [How to Google](#how-to-google-google-just-google-it)
 - [How to read and write papers](#how-to-read-and-write-papers)
 - [Coding](#coding)
 - [Linux](#linux)
 - [Miscellaneous](#miscellaneous)
+  - [GPU sharing](gpu.md)
 
 ### How to Google (Google, just Google it)
 
