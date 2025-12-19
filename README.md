@@ -507,15 +507,20 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
   [Good tutorial](https://developers.redhat.com/blog/2021/04/30/the-gdb-developers-gnu-debugger-tutorial-part-1-getting-started-with-the-debugger)
 
+
+---
+
 ## Miscellaneous
 
-* Slack
+### Slack
 
-  * Professor will add you in our slack workspace, so you can use slack for communications
-  * Download slack from their website according to your OS: [https://slack.com/downloads](https://slack.com/downloads)
-  * Open the app and Enter the workspace: [https://aiinsnthu.slack.com](https://aiinsnthu.slack.com)
-  * Use your formal name as the account name
-  * Also download the mobile app from the app store
+* Professor will add you in our slack workspace, so you can use slack for communications
+* Download slack from their website according to your OS: [https://slack.com/downloads](https://slack.com/downloads)
+* Open the app and Enter the workspace: [https://aiinsnthu.slack.com](https://aiinsnthu.slack.com)
+* Use your formal name as the account name
+* Also download the mobile app from the app store
+
+### Google Groups
 
 * Google Groups
 
@@ -571,7 +576,7 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
   ![](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2021/11/5.png)
 
-* Weekly reports
+### Weekly reports
 
   You need to send weekly report to professor through email every Friday, the email name would be like: `[WR] Your Name`
 
@@ -594,24 +599,30 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
   3. add references to related work
   4. sec. 3.1 and results writeup
 
-* How to use projector
 
-  * Windows
+### How to use projector
 
-    1. Connect to the projector’s Wi-Fi (Wi-Fi name and password will be displayed on the projection screen when no any device use it)
-    2. Open setting `System/Display/Multiple Displays` **Connect to a wireless display**
-       ![Screenshot 2023-12-14 163848](https://hackmd.io/_uploads/ryYDbBd8a.png)
-       ![Screenshot 2023-12-14 163859](https://hackmd.io/_uploads/B15O-rdL6.png)
-       ![Screenshot 2023-12-14 163905](https://hackmd.io/_uploads/By2dWSuL6.png)
-    3. If the connection is successful, you can then change projection options and project the screen just like using a regular wired projector
-       ![Screenshot 2023-12-14 165622](https://hackmd.io/_uploads/H1qHrHdIT.png)
-  * Mac
+* Windows
+
+  1. Connect to the projector’s Wi-Fi (Wi-Fi name and password will be displayed on the projection screen when no any device use it)
+  2. Open setting `System/Display/Multiple Displays` **Connect to a wireless display**
+     ![Screenshot 2023-12-14 163848](https://hackmd.io/_uploads/ryYDbBd8a.png)
+     ![Screenshot 2023-12-14 163859](https://hackmd.io/_uploads/B15O-rdL6.png)
+     ![Screenshot 2023-12-14 163905](https://hackmd.io/_uploads/By2dWSuL6.png)
+  3. If the connection is successful, you can then change projection options and project the screen just like using a regular wired projector
+     ![Screenshot 2023-12-14 165622](https://hackmd.io/_uploads/H1qHrHdIT.png)
+* Mac
+
+### How to survive/strive/thrive though grad school?
 
 * 研究生完全求生手冊
 
   * The purpose of reading this book is to help new students participate in the lab.
   * You can access this [book](https://nthu.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma990054645290206774&context=L&vid=886UST_NTHU:886UST_NTHU&lang=zh-tw&search_scope=NTHU_holding&adaptor=Local%20Search%20Engine&tab=LibraryCatalog&query=any,contains,%E7%A0%94%E7%A9%B6%E7%94%9F%E5%AE%8C%E5%85%A8%E6%B1%82%E7%94%9F%E6%89%8B%E5%86%8A&offset=0) through the NTHU library.
     ![](https://reading.udn.com/readingimg/covert_page/book/117715.jpg)
+
+
+### Presenting Ideas
 
 * Presentation slides
 
@@ -627,6 +638,6 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
   The file name of the slides would be like `NAME_YYDD`, for example, `TC_210623`
 
-* How to create CV
+### How to create CV
 
-  * reference to CV overleaf [template](https://www.overleaf.com/read/dprxndnfwrpc#08e4cf)
+* reference to CV overleaf [template](https://www.overleaf.com/read/dprxndnfwrpc#08e4cf)
