@@ -1,7 +1,7 @@
 
 # Orientation Materials – AIINS@NTHU
 
-## New Students Please Read the Following Information
+**New Students Please Read the Following Information**
 
 table of contents:
 
@@ -12,11 +12,13 @@ table of contents:
 - [Miscellaneous](#miscellaneous)
   - [GPU sharing](gpu.md)
 
-### How to Google (Google, just Google it)
+## How to Google (Google, just Google it)
 
 Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
-### How to read and write papers
+## How to read and write papers
+
+### Reading and Survey
 
 - [How to read paper](https://dl.acm.org/doi/pdf/10.1145/1273445.1273458)
 
@@ -32,164 +34,199 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
   ![](https://i.imgur.com/g94itfE.png)
 
-- Visual Studio Code
-  - vscode is a text editor. You can use it to write your paper and code
-  - Note that vscode is a text editor, so you need to install compiler for your code if you want to compile your code
-  - <https://code.visualstudio.com/>
+
+### TeX and editor
 
 - LaTex / BibTex
-  - latex is the language for writing paper. You can use overleaf to get used to it
-  - overleaf: <https://www.overleaf.com/>
+  - latex is the language for writing research papers or any academic work in general.
+  - You can use overleaf to get used to it: <https://www.overleaf.com/>
   - You need to install latex compiler if you want to compile your latex code on your computer
   - Latex compiler: <https://www.latex-project.org/get/>
   - For convince,
     - Windows, linux: TeX Live
     - Mac: MacTeX
 
-- bib File Writing Toturial
-  - Basic Information
-    - bib file contains all he references cited by your manuscript, each are in different formats according to their types: e.g., Journal:
+- Visual Studio Code
+  - vscode is a text editor. You can use it to write your paper and code
+  - Note that vscode is a text editor, so you need to install compiler for your code if you want to compile your code
+  - <https://code.visualstudio.com/>
 
-      ```bibtex
-      @article{MEVS03,
-        author = {Anirban Mahanti and Derek Eager and Mary Vernon and David Sundaram-Stukel},
-        title = {Scalable On-demand Media Streaming with Packet Loss Recovery},
-        journal = {ACM Transactions on Networking},
-        volume = {11},
-        number = {2},
-        pages = {195–209},
-        year = {2003}
-      }
-      ```
 
-    - Where to find the information required for the bib entries
-      - Find the bibtex entry first:  
-        ![](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2022/12/bibtex1-300x219.png)
-      - Revise the entry
-        - verify the information via Google scholar or the conference page, e.g., missing or wrong information
-        - make each entry follow the same rule
 
-  - Common Rules
-    - Key: the first letter of each authorʼs last name + published year (ex. YFFH17)
-      - if there are more than 4 authors: YFFH+17
-      - key conflicts: YFFH17a, YFFH17b
-    - authors: connected with “and”
-      - Fan, Ching-Ling and Yen, Shou-Cheng and Hsu, Cheng-Hsin
-      - Ching-Ling Fan and Shou-Cheng Yen and Cheng-Hsin Hsu
-    - Initial-Capitalized in title (when writing in the bib file)
-    - pages: 13–23
-    - `{}` for special terms, e.g., Internet, 3D, HEVC
-    - Use opt as prefix to comment out the entry
-      - `optmonth={April}` <- wonʼt show up in the compiled paper
 
-  - Samples for Each Reference Type
-    - Journal
+### Bibliography: `bib` File Writing Toturial
+- Basic Information
+  - `.bib` file contains all he references cited by your manuscript, each are in different formats according to their types: e.g., Journal:
 
-      ```bibtex
-      @article{MEVS03,
-        author = {Anirban Mahanti and Derek Eager and Mary Vernon and David SundaramStukel},
-        title = {Scalable On-demand Media Streaming with Packet Loss Recovery},
-        journal = {ACM Transactions on Networking},
-        volume = {11},
-        number = {2},
-        pages = {195–209},
-        month = {April},
-        year = {2003}
-      }
-      ```
+    ```bibtex
+    @article{MEVS03,
+      author = {Anirban Mahanti and Derek Eager and Mary Vernon and David Sundaram-Stukel},
+      title = {Scalable On-demand Media Streaming with Packet Loss Recovery},
+      journal = {ACM Transactions on Networking},
+      volume = {11},
+      number = {2},
+      pages = {195–209},
+      year = {2003}
+    }
+    ```
 
-      - no publisher entry, instead, move publisher (e.g., IEEE, ACM) to the head of journal name
-      - require volume and number (issue)
+  - Where to find the information required for the bib entries
+    - Find the bibtex entry first:  
+      ![](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2022/12/bibtex1-300x219.png)
+    - Revise the entry
+      - verify the information via Google scholar or the conference page, e.g., missing or wrong information
+      - make each entry follow the same rule
 
-    - Conference/workshop papers
+- Common Rules
+  - Key: the first letter of each authorʼs last name + published year (ex. YFFH17)
+    - if there are more than 4 authors: YFFH+17
+    - key conflicts: YFFH17a, YFFH17b
+  - authors: connected with “and”
+    - Fan, Ching-Ling and Yen, Shou-Cheng and Hsu, Cheng-Hsin
+    - Ching-Ling Fan and Shou-Cheng Yen and Cheng-Hsin Hsu
+  - Initial-Capitalized in title (when writing in the bib file)
+  - pages: 13–23
+  - `{}` for special terms, e.g., Internet, 3D, HEVC
+  - Use opt as prefix to comment out the entry
+    - `optmonth={April}` <- wonʼt show up in the compiled paper
 
-      ```bibtex
-      @inproceedings{LLGC11,
-        author = {Yao Liu and Fei Li and Lei Guo and Songqing Chen},
-        title = {A Measurement Study of Resource Utilization in {Internet} Mobile Streaming},
-        booktitle = {Proc. of ACM International Workshop on Network and Operating Systems Support for Digital Audio and Video (NOSSDAVʼ11)},
-        pages = {33–38},
-        month = {June},
-        year = {2011},
-        address = {Vancouver, Canada}
-      }
-      ```
+- Samples for Each Reference Type
+  - Journal
 
-      - Proc. of
-      - no publisher entry, instead, move IEEE or ACM to the head of booktitle
-      - address:
-        - in USA: `[CITY], [STATE abbr.]` (ex. Los Angeles, CA)
-        - otherwise: `[CITY], [COUNTRY]` (ex. Vancouver, Canada)
+    ```bibtex
+    @article{MEVS03,
+      author = {Anirban Mahanti and Derek Eager and Mary Vernon and David SundaramStukel},
+      title = {Scalable On-demand Media Streaming with Packet Loss Recovery},
+      journal = {ACM Transactions on Networking},
+      volume = {11},
+      number = {2},
+      pages = {195–209},
+      month = {April},
+      year = {2003}
+    }
+    ```
 
-    - URL
+    - no publisher entry, instead, move publisher (e.g., IEEE, ACM) to the head of journal name
+    - require volume and number (issue)
 
-      ```bibtex
-      @online{cisco_news,
-        author = {{Cisco Inc.}},
-        title = {Cisco Visual Networking Index: Forecast and Methodology, 2016-2021},
-        note ={https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visualnetworking-index-vni/complete-white-paper-c11-481360.html},
-        year = {2017},
-        lastaccessed ={April 26, 2018}
-      }
-      ```
+  - Conference/workshop papers
 
-      or
+    ```bibtex
+    @inproceedings{LLGC11,
+      author = {Yao Liu and Fei Li and Lei Guo and Songqing Chen},
+      title = {A Measurement Study of Resource Utilization in {Internet} Mobile Streaming},
+      booktitle = {Proc. of ACM International Workshop on Network and Operating Systems Support for Digital Audio and Video (NOSSDAVʼ11)},
+      pages = {33–38},
+      month = {June},
+      year = {2011},
+      address = {Vancouver, Canada}
+    }
+    ```
 
-      ```bibtex
-      @misc{cisco_news,
-        author = {{Cisco Inc.}},
-        title = {Cisco Visual Networking Index: Forecast and Methodology, 2016-2021},
-        key = {Cisco Visual Networking Index: Forecast and Methodology, 2016-2021},
-        year = {2017},
-        note = {\url{https://www.cisco.com/c/en/us/solutions/collateral/serviceprovider/visual-networking-index-vni/complete-white-paper-c11-481360.html}}
-      }
-      ```
+    - Proc. of
+    - no publisher entry, instead, move IEEE or ACM to the head of booktitle
+    - address:
+      - in USA: `[CITY], [STATE abbr.]` (ex. Los Angeles, CA)
+      - otherwise: `[CITY], [COUNTRY]` (ex. Vancouver, Canada)
 
-    - Book chapter:
+  - URL
 
-      ```bibtex
-      @incollection{Rezaei09,
-        author = {Mehdi Rezaei},
-        booktitle = {Mobile Multimedia Broadcasting Standards},
-        title = {Video Streaming over {DVB-H}},
-        chapter = {4},
-        publisher = {Springer US},
-        year = {2009},
-        pages = {109–131},
-        month = {November},
-        editor = {Fa-Long Luo}
-      }
-      ```
+    ```bibtex
+    @online{cisco_news,
+      author = {{Cisco Inc.}},
+      title = {Cisco Visual Networking Index: Forecast and Methodology, 2016-2021},
+      note ={https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visualnetworking-index-vni/complete-white-paper-c11-481360.html},
+      year = {2017},
+      lastaccessed ={April 26, 2018}
+    }
+    ```
 
-      - require chapter, publisher, and editor entry
-      - if you want to cite the whole book, then no chapter
+    or
 
-    - Tech Report
+    ```bibtex
+    @misc{cisco_news,
+      author = {{Cisco Inc.}},
+      title = {Cisco Visual Networking Index: Forecast and Methodology, 2016-2021},
+      key = {Cisco Visual Networking Index: Forecast and Methodology, 2016-2021},
+      year = {2017},
+      note = {\url{https://www.cisco.com/c/en/us/solutions/collateral/serviceprovider/visual-networking-index-vni/complete-white-paper-c11-481360.html}}
+    }
+    ```
 
-      ```bibtex
-      @techreport{ITUTJ247,
-        type = {Standard},
-        key = {ITU-T J.247},
-        year = {2008},
-        title = {Objective Perceptual Multimedia Video Quality Measurement in the Presence of a Full Reference},
-        institution = {ITU Telecommunication Standardization Sector}
-      }
-      ```
+  - Book chapter:
 
-      - standard, supplementary document, or non-published document
+    ```bibtex
+    @incollection{Rezaei09,
+      author = {Mehdi Rezaei},
+      booktitle = {Mobile Multimedia Broadcasting Standards},
+      title = {Video Streaming over {DVB-H}},
+      chapter = {4},
+      publisher = {Springer US},
+      year = {2009},
+      pages = {109–131},
+      month = {November},
+      editor = {Fa-Long Luo}
+    }
+    ```
 
-    - Thesis
+    - require chapter, publisher, and editor entry
+    - if you want to cite the whole book, then no chapter
 
-      ```bibtex
-      @mastersthesis{Nordland16,
-        author = {Atle Nordland},
-        title = {Compression of {3D} Media for {Internet} Transmission},
-        school = {University of Oslo},
-        year = {2016}
-      }
-      ```
+  - Tech Report
 
-      - masthersthesis, phdthesis
+    ```bibtex
+    @techreport{ITUTJ247,
+      type = {Standard},
+      key = {ITU-T J.247},
+      year = {2008},
+      title = {Objective Perceptual Multimedia Video Quality Measurement in the Presence of a Full Reference},
+      institution = {ITU Telecommunication Standardization Sector}
+    }
+    ```
+
+    - standard, supplementary document, or non-published document
+
+  - Thesis
+
+    ```bibtex
+    @mastersthesis{Nordland16,
+      author = {Atle Nordland},
+      title = {Compression of {3D} Media for {Internet} Transmission},
+      school = {University of Oslo},
+      year = {2016}
+    }
+    ```
+
+    - masthersthesis, phdthesis
+
+
+### Figures and Diagrams
+
+
+- Inkscape
+  - <https://inkscape.org/>
+  - We use inkscape to draw figures for papers.
+  - The reason we don’t use inkscape rather than ppt is the output of inkscape is .svg or .eps, which are format of Vector graphics. The Vector graphic is better than normal figure because it can provide you high visual quality when you zoom in. (like the following figure)
+
+![](https://i.imgur.com/MUkO04f.png)
+
+
+
+- python plotters (recommended)
+  - <https://seaborn.pydata.org/>
+  - <https://matplotlib.org/>
+  - please output the plotted image as both `.png` for human and `.eps` for latex
+  - [WIP](https://github.com/AIINS-NTHU/universal_data_figure_plotter)
+
+- Matlab
+  - we use matlab to plot the chart for our experiments.
+  - you can follow this [website](https://learning.site.nthu.edu.tw/p/405-1319-113887,c11954.php?Lang=zh-tw) to install Matlab
+  - tutorial: <https://www.cyclismo.org/tutorial/matlab/>
+  - an example of [plotting a figure with curves and errorbars](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2021/09/example-of-plotting-a-figure-with-curves-and-errorbars.pdf)
+
+
+
+### Version Control
 
 - SVN
   - subversion (svn) is a version control software. In our lab, we use it to do the version control for data of papers.
@@ -200,31 +237,25 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
   - [Tutorial](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2021/09/svn-tutorial.pdf)
     - Linux: `sudo apt install subversion`
     - Mac: `brew install svn`
+- git
+  - see upcoming sections
 
-- Inkscape
-  - <https://inkscape.org/>
-  - We use inkscape to draw figures for papers.
-  - The reason we don’t use inkscape rather than ppt is the output of inkscape is .svg or .eps, which are format of Vector graphics. The Vector graphic is better than normal figure because it can provide you high visual quality when you zoom in. (like the following figure)
+### Evaluation guideline
 
-  ![](https://i.imgur.com/MUkO04f.png)
+[The hint wrote by ChengHsin](https://drive.google.com/file/d/1iojCJ1nAp4cKFdaNHA9J1eYJ8ePIlUrv/view?usp=sharing)
 
-- Evaluation guideline
+> The evaluation design is crucial for we systems folks. I used to teach each of you individually when you are working on your research papers.
+>
+> This morning, I planned to put up a more comprehensive evaluation design for a paper we submitted to ICDCS in January. I then decided to write down the hints and ask the student author to redo her evaluation design instead. 🙂
+>
+> Please find my notes attached. *This is a mandatory reading material; please finish it, and discuss with me if you don’t understand any parts of it.*
+>
+> Hopefully, we will save some trial-and-error time when you work on your papers shortly.
 
-  [The hint wrote by ChengHsin](https://drive.google.com/file/d/1iojCJ1nAp4cKFdaNHA9J1eYJ8ePIlUrv/view?usp=sharing)
 
-  > The evaluation design is crucial for we systems folks. I used to teach each of you individually when you are working on your research papers.
-  >
-  > This morning, I planned to put up a more comprehensive evaluation design for a paper we submitted to ICDCS in January. I then decided to write down the hints and ask the student author to redo her evaluation design instead. 🙂
-  >
-  > Please find my notes attached. *This is a mandatory reading material; please finish it, and discuss with me if you don’t understand any parts of it.*
-  >
-  > Hopefully, we will save some trial-and-error time when you work on your papers shortly.
+### Writing
 
-- Matlab
-  - we use matlab to plot the chart for our experiments.
-  - you can follow this [website](https://learning.site.nthu.edu.tw/p/405-1319-113887,c11954.php?Lang=zh-tw) to install Matlab
-  - tutorial: <https://www.cyclismo.org/tutorial/matlab/>
-  - an example of [plotting a figure with curves and errorbars](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2021/09/example-of-plotting-a-figure-with-curves-and-errorbars.pdf)
+- [ Common mistakes in technical writing ](https://cs.dartmouth.edu/~wjarosz/writing.md.html)
 
 - Spell checker
   - You need to install spell checker to check your write-up
@@ -243,7 +274,7 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
   - Apply for your account: [English](https://learning.site.nthu.edu.tw/p/412-1319-7120.php?Lang=en) / [Chinese (Traditional)](https://learning.site.nthu.edu.tw/p/412-1319-6168.php?Lang=zh-tw)
   - <https://www.turnitin.com/>
 
-### Coding
+## Coding
 
 - Python
   - Jupyter Notebook
@@ -339,6 +370,8 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
       - Tutorial: [link](https://hackmd.io/@chenyuanjie/r1b38VEfq)
 
 - Regular Expression
+  - [Regex Cheat Sheet](https://www.rexegg.com/regex-quickstart.php)
+  - [RegExr: Learn, Build, & Test RegEx](https://regexr.com/)  
 
 - Git & Github
 
@@ -360,7 +393,7 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
   Modularization is a essential technique in software design. Porper modularization keeps your code maintainable, readable, reliable. Modular programming is a software design technique to split your code into separate parts. These parts are called modules. Note that the dependency between modules should be minimize so that they can work independent without lots of noisy binding. A good modulized system build by several modules with more and less dependency. The executable application will be created by putting them together.
 
-### Linux
+## Linux
 
 - SSH
 
@@ -388,8 +421,8 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
 - GPU driver & CUDA
 
-  Follow the document: <https://hackmd.io/4t7SbwIcSwukksWngapc8A?view>  
-  If you are using PC, the GPU is often plugged in PCI-E. Oh, you need to shutdown your PC first, right? Or BBQ will be held on your motherboard.
+  Follow these guides: [GPU sharing](gpu.md) & [PyTorch + CUDA guide](https://syjintw.github.io/posts/cuda-and-pytorch/)
+  If you are using PC, the GPU is often plugged in PCI-E. Oh, you need to shutdown your PC first, right? Or BBQ will be held on your device's motherboard.
 
 - Virtual env (docker, conda, venv, multi-pass)
 
@@ -424,7 +457,7 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
   * `blkid`
   * `mount`
 
-  NMSL Logo on teddy
+  ~~NMSL~~ AIINS Logo on teddy
 
   * `lolcat`
   * `motd`
@@ -474,7 +507,7 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
   [Good tutorial](https://developers.redhat.com/blog/2021/04/30/the-gdb-developers-gnu-debugger-tutorial-part-1-getting-started-with-the-debugger)
 
-### Miscellaneous
+## Miscellaneous
 
 * Slack
 
