@@ -11,6 +11,7 @@ table of contents:
 - [Linux](#linux)
 - [Miscellaneous](#miscellaneous)
   - [GPU sharing](gpu.md)
+  - [Earlier notes](#Earlier-Notes)
 
 ## How to Google (Google, just Google it)
 
@@ -647,8 +648,9 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
 
 
-# Earlier (Pre-2021) Notes
+# Earlier Notes
 
+>pre-2021
 >some outdated, but most still applies.
 
 ## Tools used in our Lab
