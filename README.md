@@ -20,7 +20,7 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
 ### Reading and Survey
 
-- [How to read paper](https://dl.acm.org/doi/pdf/10.1145/1273445.1273458)
+- [How to read paper](https://dl.acm.org/doi/pdf/10.1145/1273445.1273458) (2-pager quick guide)
 
 - Google scholar
   - Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, …
@@ -641,3 +641,191 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 ### How to create CV
 
 * reference to CV overleaf [template](https://www.overleaf.com/read/dprxndnfwrpc#08e4cf)
+
+
+---
+
+
+
+# Earlier (Pre-2021) Notes
+
+>some outdated, but most still applies.
+
+## Tools used in our Lab
+
+We use Latex, Matlab, and inkscape to write papers.
+
+- [How to read and write papers](#how-to-read-and-write-papers)
+- [Latex tutorial](https://www.youtube.com/watch?v=YPhbM0I2XjU) ~40min
+- [SVN Tutorial](https://www.youtube.com/watch?v=6jP6k71qe0c) ~10min
+- [Plagiarism](https://www.youtube.com/watch?v=GW3BzAG8aaY) ~3min
+- [MIT short course](https://missing.csail.mit.edu/)
+
+## Technical report template
+
+This is a [template](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2019/09/report.zip)
+for writing technical/course reports. Please use the template for all your reports.
+
+## Approved Conference/Journal List for Presentations
+
+- ACM Multimedia (ACM MM) *November*
+- ACM Multimedia Systems Conference (MMSys)  *April*
+- ACM Workshop on Network and Operating Systems Support for Digital Audio and Video (NOSSDAV) *February*
+- ACM SIGCOMM *January*
+- ACM SIGMETRICS *August*
+- ACM Internet Measurement Conference (IMC) *May*
+- ACM Passive and Active Measurement Conference (ACM PAM) *October*
+- ACM Conference on Emerging Networking EXperiments and Technologies (CoNEXT) *June*
+- ACM Workshop on Hot Topics in Networks (HotNets) *June*
+- ACM Symposium on SDN Research (SOSR) *November*
+- IEEE/ACM International Workshop on Quality of Service (IWQoS) *February*
+- IEEE International Conference on Computer Communications (INFOCOM) *July*
+- IEEE International Conference on Distributed Computing Systems (ICDCS) *January*
+- IEEE International Conference on Communications (IEEE ICC) *October*
+- IEEE International Conference on Multimedia & Expo (ICME) *December*
+- IEEE International Conference on Mobile Ad-Hoc and Sensor Systems (MASS) *January*
+- IEEE International Conference on Mobile Data Management (MDM) *March*
+- IEEE Vehicular Technology Conference (IEEE VTC) *May*
+- IEEE International Conference on Information Networking (ICOIN) *August*
+- IEEE Wireless Communications and Networking Conference (WCNC) *July*
+- IEEE International Conference on Network Protocols (ICNP) *May*
+- IEEE International Conference on Communications and Network Security (CNS) *June*
+- IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
+- IEEE Transactions on Multimedia (TMM)
+- IEEE Transactions on Mobile Computing (TMC)
+- IEEE Transactions on Network and Service Management (TNSM)
+- IEEE Transactions on Networking (ToN)
+- IEEE Internet Computing (IC)
+- IEEE Communications Magazine (IEEE ComMag)
+- IEEE Communications Surveys & Tutorials
+- Springer Multimedia Tools and Applications (MTAP)
+- Springer Mobile Networks and Applications (MONET)
+- Elsevier Computer Networks
+
+## Installing Latex compiler and integrated environment
+
+- Windows: First install [Miktex](http://miktex.org/) , a Latex compiler. Then install
+  [TeXincCenter](http://www.texniccenter.org/) , a Latex integrated environment.
+- Linux: Most Linux systems should have Latex built-in. But if not, you can install it by running
+  `sudo apt-get install latex`. For integrated environment, I recommend [Kile](http://kile.sourceforge.net/) .
+- Mac OS: See [MacTeX](https://tug.org/mactex/) .
+- Matlab: Figure export setup:
+- `% for 3-column figures set(gca,'Position',[0.1 0.1 0.8 0.8]);`
+- `% for 2-column figures set(gca,'Position',[0.1 0.1 0.85 0.85]);`
+- `% for 1-column figures set(gca,'Position',[0.1 0.1 0.85 0.85]);`
+- `set(gcf,'PaperPositionMode','auto');`
+- `print -dpng -r300 filename.png`
+- Drawing and exporting diagrams:
+  - I recommend [Inkscape](http://inkscape.org/) for drawing and exporting diagrams.
+- Adding Latex math symbols to your paper:
+  - The list of Latex math symbols is in [Latex math symbols](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2011/11/latex_symbols.pdf).
+  - You can insert a math symbol in Latex by adding `\usepackage{amssymb}` in the beginning of your tex file.
+- Latex bib file rules:
+  - `The Bibtex file (.bib) is used to keep all the reference entries.`
+  - In Latex, you should insert `\bibliographystyle{abbrv}` in the end of your tex file. The bibliographystyle
+    should be selected based on your conference/journal requirements.
+  - When you cite a paper in the main text, use `\cite{key}`, where `key` is the identifier for the reference
+    entry in your .bib file.
+
+Write the following command to insert your figure in TeX file.
+
+```latex
+\begin{figure}[ht]
+\centering
+\includegraphics[width=3.5in]{figure_name}
+\caption{figure_caption}
+\label{figure_label}
+\end{figure}
+```
+
+### Embedded fonts in PDF files
+
+It is required by IEEE, ACM, and many other publishers that all fonts are embedded in PDF files in order to
+make the document look and print in the same way the authors intended on different systems.
+
+- In TeXincCenter, you may import this
+  [profile](http://nsl.cs.sfu.ca/resources/latexPDF_profile.tco) using Build → Define Output Profiles → Import,
+  and then use this profile to compile your PDF.
+- Instead, you can use the following argument line for ps2pdf post processor (in TeXnicCenter:
+  Build → Define Output Profiles. Then choose Latex → PS → PDF. Then, Postprocessor tab).
+
+> Note: The arguments below are wrapped for readability. If your tool requires a single line, replace line breaks with spaces.
+
+```text
+-sPAPERSIZE=letter -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite
+-dPDFSETTINGS=/printer -dMaxSubsetPct=100 -dSubsetFonts=true -dEmbedAllFonts=true -r600
+-dCompatibilityLevel=1.4 -sOutputFile=”%bm.pdf” -c save pop -f “%bm.ps”
+```
+
+- You can use the following script with Ghostscript. You need to change the “outFile.pdf” and “inputFile.pdf”
+  to your files.
+
+```text
+gs -sDEVICE=pdfwrite -q -dBATCH -dNOPAUSE -dSAFER \
+-dPDFX \
+-dPDFSETTINGS=/prepress \
+-dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode \
+-dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode \
+-sOutputFile=outFile.pdf \
+-c `> setdistillerparams` \
+-f inputFile.pdf \
+-c quit
+```
+
+## Tutorials
+
+### Mininet and Ryu
+
+[These](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2011/09/images_nmsl_SDN_Tutorial.zip) are few topics in this tutorial.
+
+1. Prerequisites: Install required tools
+2. Mininet: Create a custom topology
+3. Ryu: Simple switch (add flow, pakcket-in and packet-out message, MPLS operations, multiple flow tables)
+
+### Python
+
+These are some python tutorials and exercises.
+
+- [Materials](http://www.codedata.com.tw/python/python-tutorial-the-1st-class-1-preface): Please see slide
+  No.34 ~ 63.
+- Exercises:
+  1. Hello World in Python: print “Hello World!”.
+  2. [How to find stuff in a list](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2011/09/images_nmsl_python_assignment2.zip),
+     for loop, if branch, len() function
+     1. Given a list of integers, use for loop to find and print those that are a multiple of 3
+     2. Given a list of strings, use for loop to find and print strings longer than 3 character
+     3. Print the length of the list
+  3. [How to find stuff in a dictionary](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2011/09/images_nmsl_python_assignment3.zip),
+     sometimes with tuple, for loop
+     1. Given a dictionary with different attriutes, print out john’s number
+     2. Given a nested dictionary with tuple, print out the ‘name’ attribute associated to tuple (2,3)
+     3. Given a list of dictionary, print out the ‘number’ attribute if ‘name’ attribute is ‘john’
+  4. [Learn to import stuff](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2011/09/images_nmsl_python_assignment4.zip)
+     1. print length random_list, all numbers in random_list (in a single line, with a white space in the middle of each number),
+        random_number
+     2. print the biggest number available in Python on this machine (available through importing sys)
+     3. print the copyright message of the Python interpreter (available through importing sys)
+  5. [Write a function](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2011/09/images_nmsl_python_assignment5.zip)
+     1. Given a list of integer, ...
+
+### Android
+
+- [Android Sensors](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2011/09/images_nmsl_8_Android-Sensor.pdf):
+  Android Sensor tutorial
+
+## Relevant Links
+
+- [Onepager for introducing Latex](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2011/09/images_nmsl_latex-introduction.pdf):
+  get to know Latex
+- [Not so short Latex introduction](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2011/09/images_nmsl_not-so-short-latex.pdf):
+  details about Latex
+- [Complete list of Latex symbol](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2011/09/images_nmsl_latex-symbols.pdf):
+  handy when writing complicated equations
+- [Matlab tutorial](http://www.cyclismo.org/tutorial/matlab/): online Matlab tutorial
+- [Practical Matlab introduction](http://www.math.mtu.edu/~msgocken/intro/intro.html): another Matlab tutorial
+- [PSNR/SSIM analyzer](http://qpsnr.youlink.org/): a quick PSNR/SSIM analyzer for Linux
+- [Common mistakes in technical writing](http://www.cs.dartmouth.edu/~wjarosz/writing.html): a nice document written by Jarosz;
+  read it and make sure that your manuscripts do not contain any of the mistakes mentioned in this document
+
+
+
