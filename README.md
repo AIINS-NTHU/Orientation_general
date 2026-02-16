@@ -229,17 +229,22 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 
 ### Version Control
 
-- SVN
-  - subversion (svn) is a version control software. In our lab, we use it to do the version control for data of papers.
-  - our svn server: https://nmsl.cs.nthu.edu.tw/svn/nmsl/
-  - you need to install svn client to access data on svn server
-  - We recommend svn tortoise for windows. It have GUI, so you use it easily if you are a beginner
-  - For mac and linux system, you can install svn using command line
-  - [Tutorial](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2021/09/svn-tutorial.pdf)
-    - Linux: `sudo apt install subversion`
-    - Mac: `brew install svn`
-- git
-  - see upcoming sections
+#### SVN
+- subversion (svn) is a version control software. In our lab, we use it to do the version control for data of papers.
+- our svn server: https://nmsl.cs.nthu.edu.tw/svn/nmsl/
+- you need to install svn client to access data on svn server
+- We recommend svn tortoise for windows. It have GUI, so you use it easily if you are a beginner
+- For mac and linux system, you can install svn using command line
+  - Linux: `sudo apt install subversion`
+  - Mac: `brew install svn`
+- [SVN commands](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2021/09/svn-tutorial.pdf)
+- [SVN workflow](https://hackmd.io/@hcying/By548cVzY)
+- [SVN Tutorial](https://www.youtube.com/watch?v=6jP6k71qe0c) ~10min
+  
+
+#### `git`
+
+see upcoming sections
 
 ### Evaluation guideline
 
@@ -659,8 +664,7 @@ We use Latex, Matlab, and inkscape to write papers.
 
 - [How to read and write papers](#how-to-read-and-write-papers)
 - [Latex tutorial](https://www.youtube.com/watch?v=YPhbM0I2XjU) ~40min
-- [SVN Tutorial](https://www.youtube.com/watch?v=6jP6k71qe0c) ~10min
-- [Plagiarism](https://www.youtube.com/watch?v=GW3BzAG8aaY) ~3min
+- [Understanding and Avoiding Plagiarism](https://www.youtube.com/watch?v=GW3BzAG8aaY) ~3min
 - [MIT short course](https://missing.csail.mit.edu/)
 
 ## Technical report template
