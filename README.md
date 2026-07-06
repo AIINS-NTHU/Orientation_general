@@ -3,8 +3,40 @@
 
 **New Students Please Read the Following Information**
 
-table of contents:
+## Mandatory tasks for all students
+> undergraduate, graduate, and visiting students alike
 
+To ensure everyone stays on track and makes steady progress, please strictly follow these three mandatory rules. Please note that compliance with these tasks directly affects how your merit-based stipend is allocated.
+
+**1. Weekly Reports.** Every student must send me a short weekly report via email every Friday.
+
+- **Email Subject Line:** Use the exact format "`[WR] Your Name`" . Pleae don't alter it as my agent is not smart enough to locate your report with different subject lines.
+    
+- **Content Structure:** Your email must include your tentative project or paper title, followed by a numbered "Done" list and a numbered "Todo" list.
+    
+- **Actionable and Specific Tasks:** Your "Todo" items must be concrete, specific, and broken down into tasks that take fewer than 4 hours to complete. Do not submit vague, non-useful entries like "finish homework" (which has little to do with research), "write my paper" (too broad; break it down), or "read papers" (always specify exactly which papers you are reading or define your goals more clearly).
+    
+
+**2. Presentation Slides and Structure.** When presenting your progress, you must use a shared online Google Slides file. Instead of making a new file every week, maintain a single, cumulative presentation deck.
+
+- **Organization:** Place your latest week's slides at the very front of the deck, using a clear visual separator to divide them from previous weeks.
+    
+- **Content:** Start with slides outlining the 3–5 action items we agreed to check from the previous week. Follow this with a few slides on your latest findings (always include explicit, concrete takeaways), and conclude with your planned next steps.
+    
+- **Group projects:** Work with your team to produce a project-level report consisting of 3–5 summarizing slides per week. We will pull out individual detailed slides only if we need to deep-dive into specific aspects.
+
+**3. The Balanced CS Research Stool.** Always remember that successful computer science research relies on a balanced "three-legged chair" philosophy. Your weekly efforts must be distributed evenly across these three core activities: 
+1. **Coding**: building artifacts, running your experiments, and gathering technical data; 
+2. **Reading**: consuming papers and literature to understand existing context so you never reinvent the wheel; and 
+3. **Writing**: documenting your contributions clearly so the research community can understand and build upon your work. 
+
+If any leg is missing or weak, your research stool will collapse. A general distribution is 1/3 for each leg, but of course, the ratios are floating and should be dynamically balanced. 
+
+
+---
+
+table of contents:
+- [Mandatory tasks for all students](#mandatory-tasks-for-all-students)
 - [How to Google](#how-to-google-google-just-google-it)
 - [How to read and write papers](#how-to-read-and-write-papers)
 - [Coding](#coding)
