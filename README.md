@@ -3,6 +3,17 @@
 
 **New Students Please Read the Following Information**
 
+### Table of Contents:
+- [Mandatory tasks for all students](#mandatory-tasks-for-all-students)
+- [How to Google](#how-to-google-google-just-google-it)
+- [How to read and write papers](#how-to-read-and-write-papers)
+- [Coding](#coding)
+- [Linux](#linux)
+- [Miscellaneous](#miscellaneous)
+  - [GPU sharing](gpu.md)
+  - [Earlier notes](#Earlier-Notes)
+
+
 ## Mandatory tasks for all students
 > undergraduate, graduate, and visiting students alike
 
@@ -35,15 +46,7 @@ If any leg is missing or weak, your research stool will collapse. A general dist
 
 ---
 
-table of contents:
-- [Mandatory tasks for all students](#mandatory-tasks-for-all-students)
-- [How to Google](#how-to-google-google-just-google-it)
-- [How to read and write papers](#how-to-read-and-write-papers)
-- [Coding](#coding)
-- [Linux](#linux)
-- [Miscellaneous](#miscellaneous)
-  - [GPU sharing](gpu.md)
-  - [Earlier notes](#Earlier-Notes)
+
 
 ## How to Google (Google, just Google it)
 
