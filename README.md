@@ -265,7 +265,7 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 ### Version Control
 
 #### SVN
-- subversion (svn) is a version control software. In our lab, we use it to do the version control for data of papers.
+- subversion (`svn`) is a version control software. In our lab, we use it to do the version control for data of papers.
 - our svn server: https://nmsl.cs.nthu.edu.tw/svn/nmsl/
 - you need to install svn client to access data on svn server
 - We recommend svn tortoise for windows. It have GUI, so you use it easily if you are a beginner
@@ -275,7 +275,8 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 - [SVN commands](https://aiins.cs.nthu.edu.tw/wp-content/uploads/2021/09/svn-tutorial.pdf)
 - [SVN workflow](https://hackmd.io/@hcying/By548cVzY)
 - [SVN Tutorial](https://www.youtube.com/watch?v=6jP6k71qe0c) ~10min
-  
+
+- Overleaf project backup policy: download each paper/thesis Overleaf project as a `.zip` and store it under `thesis/overleaf/*.zip` in the corresponding SVN folder, as a source-file backup independent of Overleaf's own storage.
 
 #### `git`
 
