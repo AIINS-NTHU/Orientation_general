@@ -276,7 +276,7 @@ Rule of thumb: Use ENGLISH to search everything, get rid of any Chinese keyword.
 - [SVN workflow](https://hackmd.io/@hcying/By548cVzY)
 - [SVN Tutorial](https://www.youtube.com/watch?v=6jP6k71qe0c) ~10min
 
-- Overleaf project backup policy: download each paper/thesis Overleaf project as a `.zip` and store it under `thesis/overleaf/*.zip` in the corresponding SVN folder, as a source-file backup independent of Overleaf's own storage.
+- Overleaf project backup policy: download each paper/thesis Overleaf project as a `.zip` and store it under `thesis/{year}/{name}/overleaf/*.zip` in the corresponding SVN folder, as a source-file backup independent of Overleaf's own storage.
 
 #### `git`
 
